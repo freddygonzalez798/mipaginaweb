@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mipaginaweb/static/css/main.7108172d.css",
+    "main.js": "/mipaginaweb/static/js/main.a59dd445.js",
+    "static/js/453.368e8420.chunk.js": "/mipaginaweb/static/js/453.368e8420.chunk.js",
+    "static/media/inicio.gif": "/mipaginaweb/static/media/inicio.811d9ca9dcfc0c72bb18.gif",
+    "index.html": "/mipaginaweb/index.html",
+    "main.7108172d.css.map": "/mipaginaweb/static/css/main.7108172d.css.map",
+    "main.a59dd445.js.map": "/mipaginaweb/static/js/main.a59dd445.js.map",
+    "453.368e8420.chunk.js.map": "/mipaginaweb/static/js/453.368e8420.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7108172d.css",
+    "static/js/main.a59dd445.js"
+  ]
+}

@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  height: 100vh; /* Ajusta la altura para que ocupe el 100% de la ventana */
+}
+
+.content-container {
+  flex: 1 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

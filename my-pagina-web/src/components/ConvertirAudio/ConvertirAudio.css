@@ -1,0 +1,196 @@
+:root {
+    --primary: #75FAC1;
+    --primary-hover: #35d690;
+    --bg: #373443;
+    --secondary: #262626;
+    --dropzone-bg: #2b2b2e;
+    --border: #333333;
+    --dropzone-border: #FFF;
+    --headline: #FFF;
+    --text: #FFF;
+    --primary-text: #F2F7FE;
+    --dropzone-over: var(--secondary);
+}
+
+.convertir-audio-form {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    /* Asegura que el contenido desbordado no se salga */
+}
+
+.dropzone-box {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 20px;
+    color: var(--text);
+    max-width: 100%;
+    /* Cambia a 100% para ajustarse al contenedor padre */
+    background-color: var(--color-fondo-container);
+
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subir-Archivo-Area {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dropzone-area {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--dropzone-border);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    background-color: var(--color-fondo-container);
+    height: 25px;
+    width: 250px;
+    display: inline-flex;
+}
+
+.dropzone-area .file-info {
+    font-size: 1.1rem;
+    color: var(--primary-text);
+    margin-top: 1rem;
+}
+
+.dropzone-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-area .file-upload-icon svg {
+    height: 6rem;
+    width: auto;
+    margin-bottom: 1rem;
+    stroke: var(--headline);
+}
+
+.dropzone-area:hover {
+    background-color: var(--color-fondo-container);
+    border-color: #35d690;
+    font-weight: bold;
+}
+
+.audio-formats {
+    width: 100%;
+    padding: 20px;
+    overflow-x: auto;
+    /* Permite el desplazamiento horizontal si es necesario */
+    text-align: center;
+}
+
+.audio-formats h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: var(--primary-text);
+}
+
+.audio-formats ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.audio-formats li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--primary-text);
+    position: relative;
+    padding-left: 30px;
+}
+
+.audio-formats input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.audio-formats input[type="radio"]+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: var(--color-fondo-container);
+    transition: background 0.3s, color 0.3s;
+}
+
+.audio-formats input[type="radio"]:checked+label {
+    background: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.audio-formats input[type="radio"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    margin-right: 10px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.audio-formats input[type="radio"]:checked+label::before {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+#format {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* Disminuye el espacio entre los elementos para reducir el ancho total */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+.convertir-audio-form {
+
+    max-width: 800px;
+
+    /* Define un ancho máximo para el formulario */
+    margin: auto;
+    /* Centra el formulario horizontalmente */
+}
+
+.file-upload-icon img {
+    filter: invert(1) brightness(2);
+    display: block;
+
+}
+
+.btnConvertir {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: var(--color-fondo-container);
+    border: none;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.btnConvertir:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

@@ -1,0 +1,49 @@
+/* src/VerticalNavBar.css */
+ .navbar-container { 
+    /* background-color: var(--color-fondo-container); */
+    /* Asegúrate de que coincida con el color de la barra de navegación */
+     width: var(--tamaño-ancho-nav-bar); 
+    /* Ajusta el ancho de la barra de navegación aquí */
+    /* Otros estilos si es necesario */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.vertical-nav {
+ 
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.vertical-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-nav ul li {
+  margin: 15px 0; /* Espaciado entre elementos del menú */
+}
+
+.vertical-nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #cfd8dc; /* Color de texto claro */
+  font-size: 18px; /* Tamaño de fuente más grande para mayor legibilidad */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.vertical-nav ul li a:hover {
+  color: #ffeb3bd3;  /* Color de texto al pasar el mouse, un amarillo más claro */
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.vertical-nav ul li a.active {
+  color: #ffeb3bd3; /* Color de texto activo */
+  font-weight: bold;
+  transform: scale(1.1);
+  border-left: 4px solid #ffeb3bd3;  /* Línea a la izquierda del texto activo */
+}

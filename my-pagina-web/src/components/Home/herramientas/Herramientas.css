@@ -1,0 +1,13 @@
+.home-container-carrucel {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-around; /* Distribuye el espacio de manera equitativa entre las columnas */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  }
+  
+  .home-container-carrucel > div {
+    padding: 10px; /* Añade un poco de espacio alrededor de cada columna */
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo semi-transparente */
+    border-radius: 8px; /* Bordes redondeados para cada columna */
+    text-align: center; /* Centra el texto dentro de cada columna */
+  }
+  

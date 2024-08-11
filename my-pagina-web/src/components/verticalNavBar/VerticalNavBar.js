@@ -34,7 +34,7 @@ const VerticalNavBar = () => {
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/cortadordeaudio"
             className={({ isActive }) => (isActive ? 'active' : '')}
           >
             Recorte De Audio

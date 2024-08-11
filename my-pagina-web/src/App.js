@@ -4,7 +4,7 @@ import VerticalNavBar from './components/verticalNavBar/VerticalNavBar';
 import Home from './components/Home/Home';
 import ConvertirAudio from './components/ConvertirAudio/ConvertirAudio';
 import AnalizadorDeAudio from './components/AnalizadorDeAudio/AnalizadorDeAudio';
-import Contact from './components/Contact/Contact';
+import CortadorDeAudio from './components/CortadorDeAudio/CortadorDeAudio';
 import './App.css';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<Home />}  />
             <Route path="/convertiraudio" element={<ConvertirAudio />} />
               <Route path="/analizadordeaudio" element={<AnalizadorDeAudio/>} />
-            <Route path="/contact" element={<Contact />} /> 
+            <Route path="/cortadordeaudio" element={<CortadorDeAudio />} /> 
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
